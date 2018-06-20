@@ -5,17 +5,17 @@
 #include "customer.h";
 
 class Account {
-	private:
-		float balance;
-		Customer cust;
+private:
+	float balance;
+	Customer cust;
 
-	public:
-		Account();
-		Account(float, Customer);
-		void makeDeposit(float);
-		bool makeWithdrawal(float);
-		float getBalance();
-		void view();
-		void adjustBalance();
+public:
+	Account();
+	Account(float, Customer);
+	void makeDeposit(float);
+	bool makeWithdrawal(float);
+	float getBalance();
+	void view();
+	void adjustBalance();
 };
 #endif
