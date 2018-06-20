@@ -5,13 +5,13 @@
 #include "stdafx.h"
 
 class Customer {
-	private: 
-		string accountID;
-		string name;
-	public:
-		Customer();
-		Customer(string, string);
-		void view();
-		Customer operator= (const Customer&);
+private: 
+	string accountID;
+	string name;
+public:
+	Customer();
+	Customer(string, string);
+	void view();
+	Customer operator= (const Customer&);
 };
 #endif
