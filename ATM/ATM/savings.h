@@ -6,14 +6,14 @@
 
 class Savings : public Account
 {
-	protected:
-		float interestRate; //Monthly Interest Rate
-	public:
-		Savings();
-		Savings(Customer &, double, double);
-		virtual void makeDeposit(double);
-		virtual bool makeWithdrawal(double);
-		virtual void adjustBalance();
-		virtual void view();
+protected:
+	float interestRate; //Monthly Interest Rate
+public:
+	Savings();
+	Savings(Customer &, double, double);
+	virtual void makeDeposit(double);
+	virtual bool makeWithdrawal(double);
+	virtual void adjustBalance();
+	virtual void view();
 };
 #endif
