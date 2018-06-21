@@ -12,8 +12,8 @@ private:
 public:
 	Account();
 	Account(Customer&, float);
-	void makeDeposit(float);
-	bool makeWithdrawal(float);
+	virtual void makeDeposit(double);
+	virtual bool makeWithdrawal(double);
 	float getBalance();
 	void view();
 	void adjustBalance();
