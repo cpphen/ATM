@@ -16,6 +16,6 @@ public:
 	virtual bool makeWithdrawal(double);
 	float getBalance();
 	void view();
-	void adjustBalance();
+	virtual void adjustBalance() = 0;
 };
 #endif
