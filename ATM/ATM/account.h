@@ -11,7 +11,7 @@ private:
 
 public:
 	Account();
-	Account(float, Customer);
+	Account(Customer&, float);
 	void makeDeposit(float);
 	bool makeWithdrawal(float);
 	float getBalance();
