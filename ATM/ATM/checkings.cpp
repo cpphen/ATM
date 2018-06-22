@@ -1,8 +1,3 @@
-/*
-Henry Lee
-CSIT 840
-*/
-
 #include "checkings.h"
 #include <iostream>
 using namespace std;
