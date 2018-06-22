@@ -3,7 +3,7 @@
 using namespace std;
 
 
-Account::Account()// : cust()
+Account::Account()
 {
 	balance = 0;
 	Customer();
@@ -12,8 +12,7 @@ Account::Account()// : cust()
 Account::Account(Customer& c, float userStartBal)
 {
 	balance = userStartBal;
-	cust = c;  //This is the call to the overloaded assignment operator, just like in previoes assignment where we had Date3 and Date4 created and then had Date4 = date3 =date2, date3 is calling the overloaded operator function and date2 is the parameter. In this program, cust is the caller and c the parameter.
-			   //member variable = parameter
+	cust = c; 
 }
 void Account::makeDeposit(double userDepAmnt)
 {
