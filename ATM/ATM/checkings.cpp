@@ -3,7 +3,7 @@ Henry Lee
 CSIT 840
 */
 
-#include "checking.h"
+#include "checkings.h"
 #include <iostream>
 using namespace std;
 
