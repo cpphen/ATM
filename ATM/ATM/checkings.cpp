@@ -7,7 +7,7 @@ CSIT 840
 #include <iostream>
 using namespace std;
 
-Checking::Checking() : Account() //CHECK TO SEE IF THIS IS HOW ITS CALLED, THE ZERO ARGUMENT CONSTRUCTOR
+Checking::Checking() : Account()
 {
 
 	overdraftProtection = false;
@@ -26,11 +26,6 @@ bool Checking::makeWithdrawal(double userWithdraw)
 {
 	if (Account::getBalance() - userWithdraw < 0 && overdraftProtection != true)
 		return false;
-	/*else if (Account::getBalance() - userWithdraw < 0 && overdraftProtection == true)
-	{
-	Account::makeWithdrawal(userWithdraw);
-	return true;
-	}*/
 	else
 	{
 		Account::makeWithdrawal(userWithdraw);
