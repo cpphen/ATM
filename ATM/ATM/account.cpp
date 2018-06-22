@@ -3,12 +3,10 @@
 using namespace std;
 
 
-Account::Account()
-{
-	balance = 0;
+Account::Account() : balance(0) {
 	Customer();
-
 }
+
 Account::Account(Customer& c, float userStartBal)
 {
 	balance = userStartBal;
