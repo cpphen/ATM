@@ -4,6 +4,8 @@
 #define SAVINGS_H
 #include "account.h"
 
+const int REWARD = 100;
+
 class Savings : public Account
 {
 protected:

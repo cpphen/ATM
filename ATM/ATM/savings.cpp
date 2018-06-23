@@ -1,21 +1,44 @@
-#include "customer.h"
+#include "savings.h"
+#include <iostream>
+using namespace std;
 
-Customer::Customer() 
+Savings::Savings() : Account()
 {
+	interestRate = 0;
+}
+Savings::Savings(Customer & c, double userStartBal, double userInterest) : Account(c, userStartBal)
+{
+	interestRate = userInterest;
 
 }
-
-Customer::Customer(string name, string accountID) 
+void Savings::makeDeposit(double userDepAmnt)
 {
-
+	if (userDepAmnt >= 10000)
+	{
+		userDepAmnt = userDepAmnt + REWARD;
+		Account::makeDeposit(userDepAmnt);
+	}
+	else
+		Account::makeDeposit(userDepAmnt);
 }
-
-void Customer::view() 
+bool Savings::makeWithdrawal(double userWithdraw)
 {
-
+	if (Account::getBalance() - userWithdraw < 0)
+		return false;
+	else
+	{
+		Account::makeWithdrawal(userWithdraw);
+		return true;
+	}
 }
-
-Customer Customer::operator = (const Customer& c)
+void Savings::adjustBalance()
 {
-
+	double InterestTotal;
+	InterestTotal = Account::getBalance() * interestRate;
+	Account::calcSavingsBalance(InterestTotal);
+}
+void Savings::view()
+{
+	cout << "Savings Account: \n";
+	Account::view();
 }
