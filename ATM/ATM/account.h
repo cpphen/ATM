@@ -2,7 +2,7 @@
 
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
-#include "customer.h";
+#include "customer.h"
 
 class Account {
 private:

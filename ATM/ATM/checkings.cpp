@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "checkings.h"
 #include <iostream>
 using namespace std;

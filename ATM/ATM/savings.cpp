@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "savings.h"
 #include <iostream>
 using namespace std;
