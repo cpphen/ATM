@@ -5,7 +5,9 @@ Concepts covered in program:
   - Object Oriented Programming
   - Inheritance
   - Polymorphism
+    
     -> Virtual Functions
+    
     -> Pure Virtual Functions
   - Dynamic Memory Allocation
   - Memory Deallocation
