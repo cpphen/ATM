@@ -3,6 +3,7 @@ C++ console application. Emulates an ATM machine.
 
 Concepts covered in program:
   - Object Oriented Programming
+  - Composition
   - Inheritance
   - Polymorphism
     
